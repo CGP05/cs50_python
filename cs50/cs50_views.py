@@ -1,0 +1,31 @@
+import csv
+import numpy as np
+from PIL import Image
+
+def main():
+    with open(r"C:\Users\chris\Documents\data-AZqwT.csv", "r") as views, open("analysis.csv", "w") as analysis:
+        reader = csv.DictReader(views)
+        writer = csv.DictWriter(analysis, fieldnames=reader.fieldnames)
+        writer.writeheader()
+
+        for row in reader:
+            brightness = calculate_brightness(f"{row['Geography']}")
+            writer.writerow(
+                {
+                    "id": row["Geography"],
+                    "english_title": row["english_title"],
+                    "japanese_title": row["japanese_title"]
+                    "brightness": brightness
+                }
+            )            
+
+
+def calculate_brightness(filename):
+    with Image.open(filename) as image:
+        brightness = np.mean(np.array(image.convert("L"))) / 255
+    return brightness
+
+for row in reader:
+    row["brightness"]
+
+main()

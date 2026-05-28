@@ -1,0 +1,5 @@
+35029	Etobicoke Centre	Etobicoke-Centre	preliminary	préliminaires	Jung		Ji Won	NDP-New Democratic Party	NPD-Nouveau Parti démocratique	1610	2.4	0	68029
+35029	Etobicoke Centre	Etobicoke-Centre	preliminary	préliminaires	Opitz		Ted	Conservative	Conservateur	29743	43.7	0	68029
+35029	Etobicoke Centre	Etobicoke-Centre	validated	validés	Baker		Yvan	Liberal	Libéral	36186	53.6	556	68066
+35029	Etobicoke Centre	Etobicoke-Centre	validated	validés	Jung		Ji Won	NDP-New Democratic Party	NPD-Nouveau Parti démocratique	1611	2.4	556	68066
+35029	Etobicoke Centre	Etobicoke-Centre	validated	validés	Opitz		Ted	Conservative	Conservateur	29713	44	556	68066
