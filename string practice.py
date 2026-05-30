@@ -23,15 +23,6 @@ NameError: name 'x' is not defined
 False
 >>> 164**9
 85821209809770512384
->>> "I love" + "Asian women"
-'I loveAsian women'
->>> KeyboardInterrupt
->>> "I love" * "Asian women"
-Traceback (most recent call last):
-  File "<pyshell#9>", line 1, in <module>
-    "I love" * "Asian women"
-TypeError: can't multiply sequence by non-int of type 'str'
->>> 
 >>> 
 >>> str(1)
 '1'
