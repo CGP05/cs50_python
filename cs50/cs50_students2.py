@@ -1,15 +1,14 @@
 class Politician:
-    def __init__(self, name, party, slogan):
+    def __init__(self, name, party):
         if not name:
             raise ValueError("Missing name")
-        if party not in ["Liberal", "Conservative", "Bloc", "NDP"]:
+        if party not in ["Liberal", "Conservative", "Bloc", "New Democratic"]:
             raise ValueError("Invalid party")
         self.name = name
         self.party = party
-        self.slogan = slogan
-
+        
     def __str__(self):
-        return f"{self.name} from {self.party}"
+        return f"MP {self.name} from {self.party} party"
     
     def ideology(self):
         match self.party:
@@ -29,8 +28,7 @@ def main():
 def get_politician():
     name = input("Name: ")
     party = input("Party: ")
-    slogan = input("Slogan:")
-    return Politician(name, party, slogan)
+    return Politician(name, party)
 
 if __name__ == "__main__":
     main()
