@@ -7,6 +7,13 @@ class Politician:
         self.name = name
         self.party = party
 
+    #Getter
+    def party(self):
+        return self.party()
+    
+    #Setter
+    def party(self, party):
+        self.party() = party
 
     def __str__(self):
         return f"MP {self.name} from {self.party} party"
