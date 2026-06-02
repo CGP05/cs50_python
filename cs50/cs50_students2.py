@@ -10,6 +10,17 @@ class Politician:
 
     def __str__(self):
         return f"{self.name} from {self.party}"
+    
+    def ideology(self):
+        match self.party:
+            case "Liberal":
+                return " centrist liberalism"
+            case "Conservative":
+                return "right-wing populism"
+            case "Bloc":
+                return "Quebec seperatism"
+            case "NDP":
+                return "democratic socialism"
 
 def main():
     politician = get_politician()
