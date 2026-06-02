@@ -1,7 +1,7 @@
 class Student:
     def __init__(self, name, house):
         if not name:
-            
+            raise ValueError
         self.name = name
         self.house = house
 
@@ -13,8 +13,7 @@ def main():
 def get_student():
     name = input("Name: ")
     house = input("Name: ")
-    student = Student(name, house)
-    return student
+    return Student(name, house)
 
 if __name__ == "__main__":
     main()
