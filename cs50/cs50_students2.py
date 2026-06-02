@@ -1,23 +1,23 @@
 class Student:
-    def __init__(self, name, house):
+    def __init__(self, name, party):
         if not name:
             raise ValueError("Missing name")
-        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
-            raise ValueError("Invalid house")
+        if party not in ["Liberal", "Conservative", "Bloc", "NDP"]:
+            raise ValueError("Invalid party")
         self.name = name
-        self.house = house
+        self.party = party
 
+    def __str__(self):
+        return f"{self.name} from {self.party}"
 
 def main():
     student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(student)
 
 def get_student():
     name = input("Name: ")
-    house = input("Name: ")
-    try:
-        return Student(name, house)
-    except ValueError:
+    party = input("Party: ")
+    return Student(name, party)
 
 if __name__ == "__main__":
     main()
