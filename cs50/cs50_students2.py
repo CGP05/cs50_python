@@ -9,17 +9,17 @@ class Politician:
 
     @property
     def party(self):
-        return self.party
+        return self._party
     
     @party.setter
     def party(self, party):
         if party not in ["Liberal", "Conservative", "Bloc Quebecois", "New Democratic", "Green"]:
             raise ValueError("Invalid party")
         self._party = party
+    #this function protects the data on the way in and from being overriden
 
 def main():
     politician = get_politician()
-    politician.party = "24 Sussex, Drive"
     print(politician)
 
     def __str__(self):
