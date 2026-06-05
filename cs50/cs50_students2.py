@@ -1,11 +1,20 @@
 class Politician:
     def __init__(self, name, party):
-        if not name:
-            raise ValueError("Missing name")
-        if party not in ["Liberal", "Conservative", "Bloc Quebecois", "New Democratic", "Green"]:
-            raise ValueError("Invalid party")
         self.name = name
         self.party = party
+
+    def __str__(self):
+        return f"MP {self.name} from {self.party} party"
+
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, name):
+        if not name:
+            raise ValueError("Missing name")
+        self._name = name
 
     @property
     def party(self):
@@ -21,9 +30,6 @@ class Politician:
 def main():
     politician = get_politician()
     print(politician)
-
-    def __str__(self):
-        return f"MP {self.name} from {self.party} party"
     
     def ideology(self):
         match self.party:
