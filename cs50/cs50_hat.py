@@ -5,7 +5,7 @@ class Tie:
         self.parties = ["Liberal", "Conservative", "Bloc", "New Democratic", "Green"]
     
     def sort(self, name):
-        print(name, "is in", random.choice
+        print(name, "is in", random.choice(self.parties))
 
 
 tie = Tie()
