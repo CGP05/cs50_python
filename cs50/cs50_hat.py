@@ -1,4 +1,6 @@
-class Hat: ...
+class Tie: 
+    def sort(self, name):
+        print(name, "is in", "some party")
 
-
-hat = Hat()
+tie = Tie()
+tie.sort("Harry")
