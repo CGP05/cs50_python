@@ -3,4 +3,4 @@ class Tie:
         print(name, "is in", "some party")
 
 tie = Tie()
-tie.sort("Harry")
+tie.sort("Carney")
