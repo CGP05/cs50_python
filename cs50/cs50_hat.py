@@ -10,5 +10,4 @@ class Tie:
         print(name, "is a member of", random.choice(cls.parties), "party.")
 
 
-tie = Tie()
-tie.sort("Carney")
+Tie.sort("Carney")
