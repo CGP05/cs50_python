@@ -10,7 +10,7 @@ class Politician:
     def get(cls):
         name = input("Name: ")
         party = input("House: ")
-        return cls(name,party)
+        return cls(name, party)
 
     @property
     def name(self):
