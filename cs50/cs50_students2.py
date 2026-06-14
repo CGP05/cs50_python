@@ -42,10 +42,6 @@ def main():
             case "New Democratic":
                 return "democratic socialism"
 
-def get_politician():
-    name = input("Name: ")
-    party = input("Party: ")
-    return Politician(name, party)
 
 if __name__ == "__main__":
     main()
