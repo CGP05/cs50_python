@@ -2,8 +2,7 @@ import random
 
 
 class Tie: 
-    def __init__(self):
-        self.parties = ["Liberal", "Conservative", "Bloc Québécois", "New Democratic", "Green"]
+parties = ["Liberal", "Conservative", "Bloc Québécois", "New Democratic", "Green"]
         #generally put lists of constants at top of file or class (like this)
     
     def sort(self, name):
