@@ -7,7 +7,7 @@ class Tie:
     
     @classmethod
     def sort(cls, name):
-        print(name, "is a member of", random.choice(self.parties), "party.")
+        print(name, "is a member of", random.choice(cls.parties), "party.")
 
 
 tie = Tie()
