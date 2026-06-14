@@ -5,6 +5,12 @@ class Politician:
 
     def __str__(self):
         return f"MP {self.name} from {self.party} party"
+    
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        party = input("House: ")
+        return cls(name,party)
 
     @property
     def name(self):
