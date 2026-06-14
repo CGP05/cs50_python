@@ -34,7 +34,7 @@ class Politician:
     #this function protects the data on the way in and from being overriden
 
 def main():
-    politician = get_politician()
+    politician = Politician.get()
     print(politician)
     
     def ideology(self):
