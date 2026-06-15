@@ -9,7 +9,7 @@ class Politician:
     @classmethod
     def get(cls):
         name = input("Name: ")
-        party = input("House: ")
+        party = input("Party: ")
         return cls(name, party)
 
     @property
