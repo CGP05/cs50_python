@@ -4,9 +4,8 @@ class MP:
             raise ValueError("Missing name")
         self.name = name
 
-class Backbencher:
+class Backbencher(MP):
     def __init__(self, name, party):
-        self.name = name
         self.party = party
 
     ...
