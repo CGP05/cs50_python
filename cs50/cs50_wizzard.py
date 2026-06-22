@@ -11,7 +11,7 @@ class Backbencher(MP):
     ...
 
 
-class PartyLeader:
+class PartyLeader(MP):
     def __init__(self, name, leader_since):
         self.name = name
         self.leader_since = leader_since
