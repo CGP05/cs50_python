@@ -18,6 +18,6 @@ class PartyLeader(MP):
         self.leader_since = leader_since
 
     ...
-
+mp = MP("May")
 backbencher = Backbencher("Baker", "Liberal")
 party_leader = PartyLeader("Carney", "2025")
