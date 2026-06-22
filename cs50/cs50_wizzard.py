@@ -1,5 +1,8 @@
 class MP:
-    def __init__(self)
+    def __init__(self, name):
+        if not name:
+            raise ValueError
+        self.name = name
 
 class Backbencher:
     def __init__(self, name, party):
