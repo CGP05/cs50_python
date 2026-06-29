@@ -7,5 +7,9 @@ class Vault:
     def __str__(self):
         return f"{self.gold} Gold, {self.silver} Silver, {self.bronze} Bronze"
 
+
 bank_of_canada = Vault(100, 50, 25)
 print(bank_of_canada)
+
+bank_of_togo = Vault(25, 50, 100)
+print(bank_of_togo)
