@@ -4,5 +4,8 @@ class Vault:
         self.silver = silver
         self.bronze = bronze
 
+    def __str__(self):
+        return f"{self.gold} Gold, {self.silver} Silver, {self.bronze} Bronze"
+
 bank_of_canada = Vault(100, 50, 25)
 print(bank_of_canada)
