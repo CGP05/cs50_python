@@ -3,3 +3,6 @@ class Vault:
         self.gold = gold
         self.silver = silver
         self.bronze = bronze
+
+bank_of_canada = Vault(100, 50, 25)
+print(bank_of_canada)
