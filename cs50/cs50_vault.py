@@ -7,14 +7,17 @@ class Vault:
     def __str__(self):
         return f"{self.gold} Gold, {self.silver} Silver, {self.bronze} Bronze"
 
+    def __add__(self, other):
+        gold = self.gold + other.gold
+        silver = self.silver + other.silver
+        bronze = self.bronze + other.bronze
+        return Vault(gold, silver, bronze)
 
 bank_of_canada = Vault(100, 50, 25)
 print(bank_of_canada)
 
 bank_of_togo = Vault(25, 50, 100)
 print(bank_of_togo)
-
-
 
 total = bank_of_canada + bank_of_togo
 print(total)
