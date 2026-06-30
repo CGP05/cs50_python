@@ -6,6 +6,8 @@ class Package:
         self.weight = weight
 
 def main():
-    packages = ["Package 1: Kotaro to Hana, salmon", "Package 2: Hana to Ui, chicken"]
+    packages = [
+        
+    ]
 
 main()
