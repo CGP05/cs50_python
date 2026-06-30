@@ -14,9 +14,7 @@ print(bank_of_canada)
 bank_of_togo = Vault(25, 50, 100)
 print(bank_of_togo)
 
-gold = bank_of_canada.gold + bank_of_togo.gold
-silver = bank_of_canada.silver + bank_of_togo.silver
-bronze = bank_of_canada.bronze + bank_of_togo.bronze
 
-total = Vault(gold, silver, bronze)
+
+total = bank_of_canada + bank_of_togo
 print(total)
