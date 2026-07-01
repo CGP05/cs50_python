@@ -5,9 +5,11 @@ class Package:
         self.recipient = recipient
         self.fish_type = fish_type
 
+
 def main():
     packages = [
-        Package(number=1, sender="Kotaro", recipient="Aty",fish_type= )
+        Package(number=1, sender="Kotaro", recipient="Aty",fish_type="salmon"),
+        Package(number=2, sender="Aty", recipient="Ui",fish_type="salmon")
     ]
 
 main()
