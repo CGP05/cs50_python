@@ -7,6 +7,9 @@ class Food:
     def calculate_hearts(cls, ingredients):
         hearts = 1
         for ingredient in ingredients:
+            if "hearty" in ingredient.lower():
+                hearts += 2
+            else: hearts += 1
             hearts += 1
         return hearts
 
