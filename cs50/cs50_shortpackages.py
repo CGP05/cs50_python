@@ -7,7 +7,6 @@ class Package:
 
 def main():
     packages = [
-        Package(number=1, sender="DeeDee", recipient="Mark Carney", riding=Nepean),
-        Package(number=2, sender="Mark Carney", recipient="PP", riding=Bow River)
-        
+        Package(number=1, sender="DeeDee", recipient="Mark Carney", riding="Nepean"),
+        Package(number=2, sender="Mark Carney", recipient="PP", riding="BowRiver")
     ]
