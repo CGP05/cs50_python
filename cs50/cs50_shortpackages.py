@@ -12,8 +12,6 @@ def main():
         Package(number=2, sender="Mark Carney", recipient="PP", riding="Battle River—Crowfoot"),
     ]
     for package in packages:
-        print(package.number, package.sender, package.recipient, package.riding)
+        print(f" Package 1{package.number} from {package.sender} to {package.recipient} in the federal riding of {package.riding}.")
 
-
-if __name__ == "__main__":
-    main()
+main()
