@@ -1,4 +1,6 @@
 class Food:
+    base_hearts =1 
+
     def __init__(self, ingredients):
         self.ingredients = ingredients
         self.hearts = Food.calculate_hearts(ingredients)
