@@ -5,8 +5,15 @@ class Package:
         self.recipient = recipient
         self.riding = riding
 
+
 def main():
     packages = [
         Package(number=1, sender="DeeDee", recipient="Mark Carney", riding="Nepean"),
-        Package(number=2, sender="Mark Carney", recipient="PP", riding="BowRiver")
+        Package(number=2, sender="Mark Carney", recipient="PP", riding="BowRiver"),
     ]
+    for package in packages:
+        print(package.number, package.sender, package.recipient, package.riding)
+
+
+if __name__ == "__main__":
+    main()
