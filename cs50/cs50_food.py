@@ -13,6 +13,6 @@ class Food:
 
 def main():
     mushroom_skewer = Food(ingredients=["Mushroom", "Hearty Mushroom"])
-    ...
+    print(f"This skewer heals {mushroom_skewer.hearts} hearts!")
 
 main()
