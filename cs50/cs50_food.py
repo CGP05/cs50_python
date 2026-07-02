@@ -9,7 +9,8 @@ class Food:
         for ingredient in ingredients:
             if "hearty" in ingredient.lower():
                 hearts += 2
-            else: hearts += 1
+            else: 
+                hearts += 1
             hearts += 1
         return hearts
 
