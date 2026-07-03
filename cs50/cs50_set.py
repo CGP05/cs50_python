@@ -6,3 +6,11 @@ mps = [
     {"name": "Mark Carney", "party": "Liberal"},
     {"name": "Marylin Gladu", "party": "Liberal"},
 ]
+
+parties = []
+for mp in mps:
+    if mp["party"] not in mps:
+        parties.append(mp["party"])
+
+for party in sorted(parties):
+    print(party)
