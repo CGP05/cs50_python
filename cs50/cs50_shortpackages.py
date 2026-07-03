@@ -5,6 +5,9 @@ class Package:
         self.recipient = recipient
         self.riding = riding
 
+    def __str__(self):
+        return "This is a package"
+
 
 def main():
     packages = [
