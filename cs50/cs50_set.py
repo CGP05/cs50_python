@@ -9,8 +9,8 @@ mps = [
 
 parties = set()
 for mp in mps:
-    if mp["party"] not in mps:
-        parties.append(mp["party"])
+    for mp in mps:
+        parties.add(mp["party"])
 
 for party in sorted(parties):
     print(party)
