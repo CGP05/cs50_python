@@ -7,7 +7,7 @@ mps = [
     {"name": "Marylin Gladu", "party": "Liberal"},
 ]
 
-parties = []
+parties = set()
 for mp in mps:
     if mp["party"] not in mps:
         parties.append(mp["party"])
