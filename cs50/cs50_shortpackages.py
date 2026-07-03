@@ -6,7 +6,7 @@ class Package:
         self.riding = riding
 
     def __str__(self):
-        return "This is a package"
+        return f"This is a package {self.number} from {self.sender} to {self.recipient} in the federal riding of {self.riding}."
 
 
 def main():
