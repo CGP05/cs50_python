@@ -9,7 +9,6 @@ mps = [
 
 parties = set()
 for mp in mps:
-    for mp in mps:
         parties.add(mp["party"])
 
 for party in sorted(parties):
