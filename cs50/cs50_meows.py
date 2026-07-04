@@ -1,5 +1,10 @@
 def meow(n: int) -> str:
-    """Meow n times."""
+    """
+    Meow n times.
+
+    :param n: Number of times to meow
+    :type n: int
+    """
     return "meow\n" * n
     
 
