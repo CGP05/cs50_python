@@ -7,3 +7,4 @@ class Cat:
 
 
 cat = Cat()
+cat.meow()
