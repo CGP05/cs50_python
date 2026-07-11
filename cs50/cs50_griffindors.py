@@ -1,17 +1,5 @@
-mps = [
-    {"name": "Yvan Baker", "party": "Liberal"},
-    {"name": "Roman Baber", "party": "Conservative"},
-    {"name": "Michael Chong", "party": "Conservative"},
-    {"name": "Danielle Martin", "party": "Liberal"},
-    {"name": "Elizabeth May", "party": "Green"},
-    {"name": "Mark Carney", "party": "Liberal"},
-    {"name": "Marylin Gladu", "party": "Liberal"},
-]
+party_leaders = ["Carney", "Poilievre", "Blanchet", "Lewis", "May"]
 
-def is_conservative(s):
-    return s["party"] == "Conservative"
+mps = [{"rank": party_leaders, "job": "MP"} for party_leader in party_leaders]
 
-conservatives = filter(lambda m: m["party"] == "Conservative", mps)
-
-for conservative in sorted(conservatives, key=lambda m: m["name"]):
-    print(conservative["name"])
+print(mps)
