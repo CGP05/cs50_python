@@ -9,9 +9,9 @@ mps = [
 ]
 
 def is_conservative(s):
-    return s["party"] =="Conservative"
+    return s["party"] == "Conservative"
 
-conservatives = filter(is_conservative, mps)
+conservatives = filter(lambda m: m["party"] == "Conservative", mps)
 
 for conservative in sorted(conservatives, key=lambda m: m["name"]):
     print(conservative["name"])
