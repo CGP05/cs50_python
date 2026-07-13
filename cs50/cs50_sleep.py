@@ -5,11 +5,8 @@ def main():
 
 
 def otter(n): #helper function
-    romp = []
     for i in range(n):
-        romp.append("🦦" * i)
-    return romp
-
+        yield "🦦" * i
 
 if __name__ == "__main__":
     main()
